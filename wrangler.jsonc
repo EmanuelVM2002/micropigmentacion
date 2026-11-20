@@ -1,0 +1,11 @@
+{
+  // Sitio estático en Cloudflare. El nombre define la dirección de PRUEBA (workers.dev);
+  // el dominio real micropigmentacionarkangel.com se conecta aparte, cuando el cliente apruebe.
+  "name": "arkangel-rediseno",
+  "compatibility_date": "2025-09-01",
+
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "404-page"
+  }
+}

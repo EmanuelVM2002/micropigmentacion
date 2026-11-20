@@ -1,0 +1,157 @@
+import { CASES } from '../data.mjs';
+import { treatmentPage } from './_templates.mjs';
+
+const byId = (ids) => ids.map((id) => CASES.find((c) => c.id === id));
+
+export const capilar = treatmentPage({
+  path: '/micropigmentacion-capilar-medellin/',
+  crumb: 'Micropigmentación capilar', groupLabel: 'Hombres', groupHref: '/micropigmentacion-masculina/',
+  serviceName: 'Micropigmentación capilar',
+  metaTitle: 'Micropigmentación capilar en Medellín para alopecia — ArKángel',
+  metaDesc: 'Micropigmentación capilar en Medellín: camufla entradas, densifica y logra efecto rapado de forma natural y sin cirugía. Valoración personalizada en ArKángel.',
+  eyebrow: 'Micropigmentación capilar · Hombres',
+  title: 'Recupera tu imagen y tu seguridad, <em>sin cirugía.</em>',
+  lead: 'Un procedimiento estético no quirúrgico que simula folículos pilosos para lograr densidad visual, camuflar entradas o crear un efecto de cabeza rapada uniforme.',
+  heroImage: 'capilar-after-1', heroMax: 960, heroAlt: 'Resultado de micropigmentación capilar efecto rapado',
+  msg: 'Hola ArKángel, me interesa la micropigmentación capilar. Quisiera agendar una valoración.',
+  whatEyebrow: 'Qué es', whatTitle: 'Folículos simulados, <em>resultado natural.</em>',
+  what: [
+    'La micropigmentación capilar es un procedimiento estético no quirúrgico que consiste en implantar pigmentos especializados en la capa superficial de la piel del cuero cabelludo. Su objetivo es simular folículos pilosos reales, logrando un acabado tridimensional que crea el efecto visual de una cabeza rapada con densidad, o disimula zonas con poca cobertura.',
+    'Antes de empezar realizamos una valoración para determinar la técnica y el diseño más adecuados para cada caso.',
+  ],
+  factsTitle: 'En un vistazo',
+  facts: [
+    { k: 'Para quién', v: 'Hombres con entradas, coronilla despoblada o alopecia.' },
+    { k: 'Sesiones', v: 'Generalmente entre 2 y 3, espaciadas por un par de semanas.' },
+    { k: 'Duración del resultado', v: 'Entre 2 y 4 años; luego el pigmento se aclara gradualmente y se recomienda un retoque.' },
+    { k: 'Recuperación', v: 'Sin cirugía; un enrojecimiento leve y temporal es habitual.' },
+    { k: 'Comodidad', v: 'Anestesia tópica durante la sesión.' },
+  ],
+  techEyebrow: 'Técnicas', techTitle: 'Un diseño para <em>cada patrón de pérdida.</em>',
+  techLead: 'Elegimos la técnica según tu grado de alopecia y la densidad que deseas.',
+  techs: [
+    { t: 'Efecto rapado', d: 'Densidad uniforme que simula una cabeza rapada, ideal para alopecia avanzada.' },
+    { t: 'Técnica 3D', d: 'Efecto tridimensional que aporta profundidad y realismo.' },
+    { t: 'Pelo a pelo', d: 'Trazos que imitan la dirección natural del cabello en la línea frontal.' },
+    { t: 'Densificación', d: 'Aporta densidad visual en zonas con cabello escaso, como la corona.' },
+  ],
+  cases: byId(['capilar-grado7', 'capilar-grado6', 'capilar-corona']),
+  faq: [
+    { q: '¿Duele la micropigmentación capilar?', a: 'Utilizamos anestesia tópica para tu comodidad. La mayoría de los pacientes describe una sensación leve, como vibración o cosquilleo. Es normal un ligero enrojecimiento temporal en las primeras 24 a 48 horas.' },
+    { q: '¿Se nota que tengo micropigmentación?', a: 'El objetivo es que el resultado se vea natural. La técnica simula con precisión la distribución y la densidad del cabello para que luzcas más definido y juvenil.' },
+    { q: '¿Cuántas sesiones se necesitan?', a: 'Generalmente entre 2 y 3 sesiones espaciadas por un par de semanas: la primera diseña la base y la línea frontal, la segunda aporta densidad y la tercera perfecciona los detalles.' },
+    { q: '¿Cuál es la diferencia entre un tatuaje y la micropigmentación capilar?', a: 'La micropigmentación utiliza pigmentos especializados para el cuero cabelludo, se trabaja de forma superficial y con agujas de ultraprecisión que imitan el folículo, pensada para mantener un tono estable.' },
+    { q: '¿Cuánto dura el resultado y requiere retoques?', a: 'Es una solución de largo plazo: los resultados se mantienen entre 2 y 4 años, tras los cuales el pigmento se aclara de forma gradual. Se recomienda un retoque pasado ese periodo.' },
+    { q: '¿Cuánto cuesta en Medellín?', a: 'Depende del grado de alopecia, la extensión de la zona y la densidad deseada. Valores de referencia publicados: casos leves (entradas o coronilla) desde $390.000 hasta $1.500.000 COP; moderados entre $1.500.000 y $3.000.000 COP; alopecia avanzada desde $3.000.000 COP. El valor exacto se confirma en la valoración.' },
+    { q: '¿Qué es mejor: micropigmentación o injerto capilar?', a: 'Depende de lo que busques. La micropigmentación es no invasiva, sin cirugía ni recuperación prolongada y con resultados inmediatos; el injerto es una intervención quirúrgica que requiere cicatrización y una buena zona donante. Algunas personas combinan ambas técnicas.' },
+    { q: '¿Puedo viajar a Medellín para hacerme el tratamiento?', a: 'Sí. Se recomienda una estancia de 3 a 5 días para completar la valoración y las sesiones necesarias. Pregúntanos por los paquetes para quienes nos visitan desde el exterior.' },
+  ],
+  related: [
+    { label: 'Micropigmentación de barba', href: '/micropigmentacion-de-barba/' },
+    { label: 'Cejas masculinas 6D', href: '/micropigmentacion-cejas-hombres/' },
+    { label: 'Galería de resultados', href: '/resultados/' },
+  ],
+  ctaTitle: '¿Tienes entradas o zonas <em>con poca densidad?</em>',
+  ctaText: 'Agenda una valoración en Medellín y conoce si la micropigmentación capilar es adecuada para tu caso.',
+});
+
+export const barba = treatmentPage({
+  path: '/micropigmentacion-de-barba/',
+  crumb: 'Micropigmentación de barba', groupLabel: 'Hombres', groupHref: '/micropigmentacion-masculina/',
+  serviceName: 'Micropigmentación de barba',
+  metaTitle: 'Micropigmentación de barba en Medellín — ArKángel',
+  metaDesc: 'Micropigmentación de barba en Medellín: rellena zonas despobladas, define contornos y aporta densidad de forma natural y sin cirugía.',
+  eyebrow: 'Micropigmentación de barba · Hombres',
+  title: 'Una barba definida, <em>perfecta al instante.</em>',
+  lead: 'Rellena zonas despobladas, define el contorno y aporta volumen con un efecto de sombreado tridimensional, sin cirugía.',
+  heroImage: 'barba-sombra', heroAlt: 'Micropigmentación de barba con diseño de contorno',
+  msg: 'Hola ArKángel, me interesa la micropigmentación de barba. Quisiera agendar una valoración.',
+  whatEyebrow: 'Qué es', whatTitle: 'Micropuntos que <em>simulan el vello real.</em>',
+  what: [
+    'Es una técnica de pigmentación que crea micropuntos sobre la piel para simular visualmente folículos de vello y mejorar la apariencia de densidad, definición y uniformidad de la barba.',
+    'No hace crecer el vello: es un procedimiento estético que simula visualmente los folículos. El diseño, la densidad y el tono se adaptan a tu rostro, tu piel y el vello existente.',
+  ],
+  factsTitle: 'En un vistazo',
+  facts: [
+    { k: 'Para quién', v: 'Hombres con poco vello facial, parches o zonas sin vello.' },
+    { k: 'Tipo de procedimiento', v: 'Semipermanente: el pigmento se atenúa progresivamente y puede retocarse.' },
+    { k: 'Comodidad', v: 'Anestesia tópica; la sensación varía según la persona y la zona.' },
+    { k: 'Cuidados', v: 'Evitar tocar la zona, sol directo, sudoración intensa y productos irritantes durante la recuperación inicial. Recibes indicaciones personalizadas.' },
+  ],
+  techEyebrow: 'Qué logramos', techTitle: 'Diseño que <em>enmarca tu rostro.</em>',
+  techLead: 'Combinamos técnicas según la zona y la densidad que buscas.',
+  techs: [
+    { t: 'Relleno pelo a pelo', d: 'Camuflaje de zonas sin vello en mejillas, mentón o bigote con un acabado hiperrealista.' },
+    { t: 'Diseño de contornos', d: 'Líneas precisas y armónicas que enmarcan el rostro y complementan tu fisonomía.' },
+    { t: 'Sombreado 3D', d: 'Efecto tridimensional que aporta grosor y solidez a un vello delgado o poco poblado.' },
+  ],
+  gallery: {
+    title: 'Diseños de <em>barba.</em>', lead: 'Algunos trabajos de micropigmentación de barba.',
+    items: [
+      { img: 'barba-sombra', w: 500, alt: 'Micropigmentación de barba con diseño de contorno', cap: 'Contorno y sombreado' },
+      { img: 'barba-proceso', w: 500, alt: 'Micropigmentación de barba en proceso', cap: 'Barba en proceso' },
+    ],
+  },
+  faq: [
+    { q: '¿La micropigmentación de barba se ve natural?', a: 'Sí. El diseño, la densidad y el tono se adaptan a tu rostro, tu piel y el vello existente para lograr una apariencia natural y armoniosa.' },
+    { q: '¿Cuánto dura?', a: 'Es un procedimiento semipermanente. Su duración varía según el tipo de piel, los cuidados, la exposición solar y las características individuales; en la valoración te damos un estimado para tu caso.' },
+    { q: '¿Es permanente?', a: 'No. Es semipermanente y el pigmento se va atenuando progresivamente con el tiempo; puede realizarse un retoque cuando sea necesario.' },
+    { q: '¿Hace crecer el vello?', a: 'No. Simula visualmente los folículos, pero no estimula ni produce crecimiento de vello.' },
+    { q: '¿Duele?', a: 'Puede generar algo de sensibilidad; el nivel varía según cada persona y la zona. Usamos anestesia tópica para tu comodidad.' },
+    { q: '¿Cuánto cuesta?', a: 'El valor depende de la zona, la densidad y las características de cada caso. Escríbenos y agenda tu valoración para recibir un valor claro.' },
+    { q: '¿Qué cuidados debo tener después?', a: 'Evita tocar o rascar la zona, la exposición solar directa, la sudoración intensa y los productos irritantes durante el periodo inicial. Recibirás indicaciones personalizadas.' },
+  ],
+  related: [
+    { label: 'Micropigmentación capilar', href: '/micropigmentacion-capilar-medellin/' },
+    { label: 'Cejas masculinas 6D', href: '/micropigmentacion-cejas-hombres/' },
+    { label: 'Galería de resultados', href: '/resultados/' },
+  ],
+  ctaTitle: 'Dile adiós a las <em>zonas despobladas.</em>',
+  ctaText: 'Agenda tu valoración y conoce qué diseño de barba va mejor contigo.',
+});
+
+export const cejasHombres = treatmentPage({
+  path: '/micropigmentacion-cejas-hombres/',
+  crumb: 'Cejas masculinas', groupLabel: 'Hombres', groupHref: '/micropigmentacion-masculina/',
+  serviceName: 'Micropigmentación de cejas para hombres',
+  metaTitle: 'Micropigmentación de cejas para hombres 6D en Medellín — ArKángel',
+  metaDesc: 'Cejas masculinas micropigmentadas efecto 6D en Medellín: corrige asimetrías, cubre zonas despobladas y da fuerza a tu mirada con un resultado natural.',
+  eyebrow: 'Cejas masculinas 6D · Hombres',
+  title: 'Dale fuerza a tu mirada, <em>sin que se note.</em>',
+  lead: 'Un diseño masculino pelo a pelo que respeta el crecimiento natural de tus cejas y las proporciones de tu rostro.',
+  heroImage: 'cejas-after', heroMax: 960, heroAlt: 'Cejas masculinas micropigmentadas',
+  msg: 'Hola ArKángel, me interesan las cejas masculinas 6D. Quisiera agendar una valoración.',
+  whatEyebrow: 'Qué es', whatTitle: 'Cada pelo, <em>dibujado a mano.</em>',
+  what: [
+    'Los hombres buscan resultados naturales y discretos. Nuestro enfoque se centra en un diseño masculino que respete la apariencia y el crecimiento natural de las cejas, para que el trabajo no se note.',
+    'El procedimiento consiste en implantar pigmento en la capa superficial de la piel con una técnica precisa: cada pelo se dibuja siguiendo la dirección natural del vello, logrando un efecto 6D de aspecto hiperrealista. Se utiliza un dermógrafo digital, a diferencia del microblading, que emplea instrumentos manuales.',
+  ],
+  factsTitle: 'En un vistazo',
+  facts: [
+    { k: 'Para quién', v: 'Hombres con cejas escasas, asimétricas, con cicatrices o zonas despobladas.' },
+    { k: 'Duración de la sesión', v: 'Aproximadamente 1 hora y 40 minutos por paciente.' },
+    { k: 'Retoque', v: 'Se recomienda un retoque un mes después de la primera sesión.' },
+    { k: 'Recuperación', v: 'Sin tiempo de incapacidad; retomas tus actividades de inmediato.' },
+  ],
+  techEyebrow: 'Qué logramos', techTitle: 'Un diseño <em>a la medida de tu rostro.</em>',
+  techLead: 'Tomamos medidas faciales para crear armonía y respetar tu fisonomía.',
+  techs: [
+    { t: 'Pelo a pelo 6D', d: 'Simulación milimétrica de vellos naturales para rellenar zonas despobladas o cicatrices.' },
+    { t: 'Corrección de asimetrías', d: 'Estructuración a la medida que equilibra las facciones sin un aspecto artificial.' },
+    { t: 'Densidad y sombreado sutil', d: 'Técnicas para dar cuerpo y solidez a cejas escasas o rebeldes.' },
+  ],
+  cases: byId(['cejas-3d']),
+  faq: [
+    { q: '¿Se ve natural o “hecho”?', a: 'El diseño respeta la dirección natural del vello y la fisonomía masculina. A diferencia de una depilación excesiva, buscamos que el trabajo no se note.' },
+    { q: '¿En qué se diferencia del microblading?', a: 'El microblading utiliza instrumentos de uso manual; nuestro enfoque se basa en dermógrafos digitales, que permiten una aplicación precisa.' },
+    { q: '¿Cuánto dura la sesión?', a: 'Aproximadamente 1 hora y 40 minutos. Recomendamos un retoque un mes después de la primera sesión.' },
+    { q: '¿Puede corregir cicatrices en la ceja?', a: 'Puede ayudar a disimular cicatrices y zonas sin vello. Lo evaluamos en la valoración.' },
+  ],
+  related: [
+    { label: 'Micropigmentación capilar', href: '/micropigmentacion-capilar-medellin/' },
+    { label: 'Micropigmentación de barba', href: '/micropigmentacion-de-barba/' },
+    { label: 'Galería de resultados', href: '/resultados/' },
+  ],
+  ctaTitle: 'Cejas con carácter, <em>naturales.</em>',
+  ctaText: 'Agenda tu valoración y diseñemos tus cejas a la medida de tu rostro.',
+});
