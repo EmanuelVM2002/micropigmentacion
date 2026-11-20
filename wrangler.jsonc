@@ -1,7 +1,7 @@
 {
-  // Sitio estático en Cloudflare. El nombre define la dirección de PRUEBA (workers.dev);
-  // el dominio real micropigmentacionarkangel.com se conecta aparte, cuando el cliente apruebe.
-  "name": "arkangel-rediseno",
+  // Sitio estático en Cloudflare. El nombre debe coincidir con el proyecto creado en Cloudflare.
+  // El dominio real micropigmentacionarkangel.com se conecta aparte, cuando el cliente apruebe.
+  "name": "micropigmentacionh",
   "compatibility_date": "2025-09-01",
 
   "assets": {
@@ -9,6 +9,3 @@
     "not_found_handling": "404-page"
   }
 }
-
-// wrangler.jsonc
-"name": "micropigmentacionh",
