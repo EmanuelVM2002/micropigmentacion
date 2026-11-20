@@ -97,3 +97,9 @@ más páginas comerciales propias: Micropigmentación capilar, de barba y cejas 
 Probado en navegador a 1440, 820 y 375 px, interacciones (pestañas, carrusel, comparador, lightbox, validación
 y mensaje de WhatsApp). **No se midió** Lighthouse/Core Web Vitals en producción, ni lectores de pantalla,
 ni dispositivos reales: hacerlo tras publicar la dirección de prueba.
+
+## Despliegue desde GitHub (Cloudflare)
+
+`dist/` **está versionado** a propósito: Cloudflare ejecuta solo `npx wrangler deploy` y necesita la carpeta ya
+generada. Después de cambiar contenido: `node build.mjs`, luego commit y push de `src/` **y** `dist/`.
+(Alternativa: poner `node build.mjs` como *Build command* en Cloudflare y volver a ignorar `dist/`.)
